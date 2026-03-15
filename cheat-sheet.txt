@@ -38,7 +38,11 @@
 | EXAMPLE: ls ~/Downloads
 | Very simple, it will just tell you all of the files inside of "~/Downloads".
 --------
-|
-|
-|
+
 [Utility Commands & Managing Apps]
+| "lsblk" was already mentioned at that beginning, it stands for List Blocks, it shows you every drive, so if you have a USB connected, it will show it and how much storage it has, it will show a MicroSD card, another SSD, an HDD, any storage device and the size.
+| If you have a modern laptop, the "block" you are working on is almost always "/dev/nvme*", mine is "/dev/nvme0n1".
+---------
+| "lsusb" stands for List USB, simple, it lists any connected device. so, the name is ironic. It does not JUST list USBs.
+| "lsusb" will show your USBs and their names, but it will also show things like webcams and your headphones that are wired.
+---------
