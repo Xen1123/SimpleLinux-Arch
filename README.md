@@ -1,0 +1,1 @@
+| This GitHub repository is a simple project I am working on to automate my own system and help users that are new to Linux. I plan to add more distro support for my scripts later on, but currently, I just make them for Arch.
