@@ -1,21 +1,44 @@
 ############################################ 
-# This Document is a cheat sheet for Linux #
+# This document is a cheat sheet for Linux #
 # to help new users                        #
 ############################################
  
 [File Managing Commands, Tips, & Examples]
 | "dd" is used to transfer data bit-by-bit.
-| **EXAMPLE**: sudo dd if=/path/to/file of=/dev/device-name bs=4M status=progress conv=fsync
+| EXAMPLE: sudo dd if=/path/to/file of=/dev/device-name bs=4M status=progress conv=fsync
 | You find devices (partitions) by typing "lsblk".
 --------
-| "mv" is used to **MOVE** files around your device.
-| **EXAMPLE**: mv ~/Downloads/Job-Application.pdf ~/Documents/Job_Application.pdf
+| FIRST!!! Do NOT type "~" before every directory, "~" is the shortcut to your home directory, so it is just a shorter way of typing "/home/$USER", if you're inside "/home/billy/Downloads" and you want to go interact with "/home/billy/Downloads/Baby-Billy-Photos", just type your command and then "Baby-Billy-Photos", typing your command and then "~/Baby-Billy-Photos" will NOT work because that folder is not directly inside your user folder! 
+| "mv" is used to MOVE files around your device.
+| EXAMPLE: mv ~/Downloads/Job-Application.pdf ~/Documents/Job_Application.pdf
 | Using "mv" also lets you change the name of a file, when you give your output directory, just put a different name in that isn't already in the folder.
-| **Re-Naming EXAMPLE**: mv ~/Downloads/Job_Application.pdf ~/Documents/Job_Resume.pdf
+| Re-Naming EXAMPLE: mv ~/Downloads/Job_Application.pdf ~/Documents/Job_Resume.pdf
 --------
-| "cp" is used to **COPY** files instead of just moving them.
-| **EXAMPLE**: cp -r ~/Pictures/Easter-2018 ~/Pictures/Family/
+| "cp" is used to COPY files instead of just moving them.
+| EXAMPLE: cp -r ~/Pictures/Easter-2018 ~/Pictures/Family/
 | Typing this would keep Easter-2018 in your Pictures folder, but it would also put it inside ~/Pictures/Family
 --------
-| "rm" is used to delete files, be careful! This command doesn't put your files in trash like an app would!
-| **EXAMPLE**: rm -rf ~/Downloads/
+| "rm" is used to DELETE files PERMANENTLY, be careful! This command doesn't put your files in trash like an app would!
+| EXAMPLE: rm -rf ~/Downloads/Embarassing-Photos/
+| This FOREVER deletes the file(s), using " -rf" is necessary if you are deleting a folder that has items inside. If you are just deleting a single file, "rm" is good enough on its own.
+--------
+| "cd" is used to CHANGE your working DIRECTORY
+| EXAMPLE: cd ~/Downloads/Linux-Scripts
+| After running this, you are now inside your "Linux-Scripts" folder, so every command runs inside there unless you add a directory to your command,
+| CD also has a parent directory extension to the command, so if you're inside "~/Downloads/Pictures-of-Cats/" and you want to go to "~/Downloads/Pictures-of-Dogs/", just type "cd ../Pictures-of-Dogs"
+--------
+| "pwd" stands for PRINT WORKING DIRECTORY", it is very simple, it just tells you what folder you are working in.
+| For this example, let us say we used the "cd" command from above.
+| EXAMPLE;
+\ user@linux -> pwd
+\ /home/user/Downloads/Linux-Scripts
+\ user@linux -> 
+--------
+| "ls", known as LIST, lists all files in a given directory.
+| EXAMPLE: ls ~/Downloads
+| Very simple, it will just tell you all of the files inside of "~/Downloads".
+--------
+|
+|
+|
+[Utility Commands & Managing Apps]
