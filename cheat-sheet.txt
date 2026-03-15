@@ -6,13 +6,18 @@
 [File Managing Commands, Tips, & Examples]
 | "dd" is used to transfer data bit-by-bit.
 | EXAMPLE: sudo dd if=/path/to/file of=/dev/device-name bs=4M status=progress conv=fsync
-| You find devices (partitions) by typing "lsblk".
+| You find devices (partitions/blocks) by typing "lsblk".
 --------
-| FIRST!!! Do NOT type "~" before every directory, "~" is the shortcut to your home directory, so it is just a shorter way of typing "/home/$USER", if you're inside "/home/billy/Downloads" and you want to go interact with "/home/billy/Downloads/Baby-Billy-Photos", just type your command and then "Baby-Billy-Photos", typing your command and then "~/Baby-Billy-Photos" will NOT work because that folder is not directly inside your user folder! 
+| FIRST!!! Do NOT type "~" before every directory, "~" is the shortcut to your home directory, so it is just a shorter way of typing "/home/$USER". 
+| If you're inside "/home/billy/Downloads" and you want to go interact with "/home/billy/Downloads/Baby-Billy-Photos", just type your command and then "Baby-Billy-Photos". 
+| Typing your command and then "~/Baby-Billy-Photos" will NOT work because that folder is not directly inside your user folder! 
+--------
 | "mv" is used to MOVE files around your device.
 | EXAMPLE: mv ~/Downloads/Job-Application.pdf ~/Documents/Job_Application.pdf
 | Using "mv" also lets you change the name of a file, when you give your output directory, just put a different name in that isn't already in the folder.
 | Re-Naming EXAMPLE: mv ~/Downloads/Job_Application.pdf ~/Documents/Job_Resume.pdf
+--------
+| "cat" is used to show you the exact contents of your text file, it will output the exact info inside of the file, commonly a .txt or .sh
 --------
 | "cp" is used to COPY files instead of just moving them.
 | EXAMPLE: cp -r ~/Pictures/Easter-2018 ~/Pictures/Family/
@@ -45,4 +50,31 @@
 ---------
 | "lsusb" stands for List USB, simple, it lists any connected device. so, the name is ironic. It does not JUST list USBs.
 | "lsusb" will show your USBs and their names, but it will also show things like webcams and your headphones that are wired.
+---------
+| PACKAGE MANAGERS
+    The most common package managers are these, if you aren't using them, you're too advanced for this cheat sheet.
+        APT - Debian/Ubuntu Based Distros
+        Pacman - Arch Based Distros
+        DNF - Fedora Based Distros
+| How to INSTALL Apps
+    APT - sudo apt install <package_name>
+    Pacman - sudo pacman -S <package_name>
+    DNF - sudo dnf install <package_name>
+| How to UNINSTALL Apps
+    APT - sudo apt remove <package_name>
+    Pacman - sudo pacman -Rnc <package_name>
+    DNF - sudo dnf remove <package_name>
+| How to UPDATE your system
+    APT - sudo apt update && sudo apt upgrade
+    Pacman - sudo pacman -Syu
+    DNF - sudo dnf upgrade
+---------
+| "uanme -a" is a very useful command for some, but not for many. It prints system information, like your kernel name, your hostname, the time your system thinks it is, etc.
+| Most of the information "uname -a" gives you is useless if you have used your computer for more than ten seconds, but it is a useful command if you're diagnosing a device and have no insider information.
+---------
+
+[TIPS]
+| Tapping your TAB key after the first few letters of a filename or directory name when typing a command with a long filename or folder name will autofill it. 
+| If nothing shows, hit TAB two times very quick, this will give you options to choose from.
+| When you get a list of options, navigate with your arrow keys and then select the one you want with enter.
 ---------
