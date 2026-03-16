@@ -2,7 +2,7 @@
 echo "This script installs fish shell and some other fun programs, along with setting them up!"
 sudo pacman -S fish figlet fastfetch bat asciiquarium
 mkdir -p ~/.config/fish
-echo '"set fish_greeting""' > ~/.config/fish/config.fish
+echo 'set fish_greeting""' > ~/.config/fish/config.fish
 echo "fastfetch --logo venom" >> ~/.config/fish/config.fish
 echo "alias pacman 'sudo pacman'" >> ~/.config/fish/config.fish
 fastfetch --gen-config
