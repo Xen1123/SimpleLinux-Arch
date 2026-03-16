@@ -45,7 +45,7 @@ echo "Okay, all finished then, just type "fish" to enter fish shell, and "exit" 
 exit
 ;;
 *)
-echo "Invalid Option: $REPLY"
+echo "Invalid Option $REPLY"
 ;;
 esac
 done
