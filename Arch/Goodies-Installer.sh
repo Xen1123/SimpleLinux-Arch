@@ -34,7 +34,7 @@ chsh -s /usr/bin/fish
 echo "Changing your shell typically requires a restart for it to fully take affect, would you like to reboot?"
 PS3='Please Select Your Choice: '
 options=("Restart" "Close The Script")
-select opt in "$(options[@]}"
+select opt in "${options[@]}"
 do
 case $opt in
 "Restart")
