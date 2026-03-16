@@ -32,7 +32,7 @@ echo "}"
 ) > ~/.config/fastfetch/config.jsonc 
 chsh -s /usr/bin/fish
 echo "Changing your shell typically requires a restart for it to fully take affect, would you like to reboot?"
-PS3='Please Select Your Choice:"
+PS3='Please Select Your Choice: '
 options=("Restart" "Close The Script")
 select opt in "$(options[@]}"
 do
