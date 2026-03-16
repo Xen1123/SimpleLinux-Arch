@@ -45,7 +45,8 @@
 --------
 
 [Utility Commands & Managing Apps]
-| "lsblk" was already mentioned at that beginning, it stands for List Blocks, it shows you every drive, so if you have a USB connected, it will show it and how much storage it has, it will show a MicroSD card, another SSD, an HDD, any storage device and the size.
+| "lsblk" was already mentioned at that beginning, it stands for List Blocks, it shows you every drive, so if you have a USB connected, it will show it and how much storage it has.
+| LSBLK will also show a MicroSD card, another SSD, an HDD, any storage device and the size.
 | If you have a modern laptop, the "block" you are working on is almost always "/dev/nvme*", mine is "/dev/nvme0n1".
 ---------
 | "lsusb" stands for List USB, simple, it lists any connected device. so, the name is ironic. It does not JUST list USBs.
@@ -77,4 +78,7 @@
 | Tapping your TAB key after the first few letters of a filename or directory name when typing a command with a long filename or folder name will autofill it. 
 | If nothing shows, hit TAB two times very quick, this will give you options to choose from.
 | When you get a list of options, navigate with your arrow keys and then select the one you want with enter.
+---------
+| When you're using pacman, yay, or paru, and you want it to be automatic without asking you to confirm, type " --noconfirm" after the command.
+| If you're using APT or DNF, use " -y".
 ---------
