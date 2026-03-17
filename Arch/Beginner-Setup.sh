@@ -44,21 +44,25 @@ echo "}"
 ) > ~/.config/fastfetch/config.jsonc
 sudo systemctl enable NetworkManager
 sudo systemctl enable sshd
+sudo systemctl enable sddm.service
 sudo systemctl start NetworkManager
 sudo systemctl start NetworkManager
 chsh -s /usr/bin/fish
 clear
 echo "Changing your shell typically requires a restart for it to fully take affect, would you like to reboot?"
 PS3='Please Select Your Choice: '
-options=("Restart" "Go To KDE")
+options=("Restart" "Go To KDE" "Exit To Typing")
 select opt in "${options[@]}"
 do
 case $opt in
 "Restart")
 sudo reboot now
 ;;
+"Exit To Typing")
+exit
+;;
 "Go To KDE")
-sudo systemctl enable --now sddm.service
+sudo systemctl start sddm.service
 exit
 ;;
 *)
