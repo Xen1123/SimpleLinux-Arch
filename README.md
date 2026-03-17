@@ -10,3 +10,5 @@
     <br>
     <img width="774" height="711" alt="image" src="https://github.com/user-attachments/assets/1f95e93f-af5c-464d-bc8b-73a781779757" />
 </details>
+
+- I mainly do this for fun, honestly.
