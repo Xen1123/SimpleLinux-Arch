@@ -1,22 +1,22 @@
 #!/bin/bash
 sudo pacman -S wget curl git base-devel bat nano vim fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin discord --needed --noconfirm
-cd ~
+cd
 rm -rf yay
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
+		git clone https://aur.archlinux.org/yay.git
+		cd yay
+		makepkg -si --noconfirm
 mkdir -p ~/.config/fish
 echo 'set fish_greeting ""' > ~/.config/fish/config.fish
 echo "fastfetch --logo venom" >> ~/.config/fish/config.fish
-yay -S localsend-bin --noconfirm
-yay -S  balena-etcher --noconfirm
-yay -S ventoy-bin --noconfirm
-yay -S qdl --noconfirm
+	yay -S localsend-bin --noconfirm
+	yay -S  balena-etcher --noconfirm
+	yay -S ventoy-bin --noconfirm
+	yay -S qdl --noconfirm
 mkdir -p ~/Downloads
 wget https://raw.githubusercontent.com/Froste5308/SimpleLinux/main/cheat-sheet.txt
 mkdir -p ~/Desktop
-cp -r ~/Downloads/cheat-sheet.txt ~/Desktop/cheat-sheet.txt
-cd ~
+cp ~/Downloads/cheat-sheet.txt ~/Desktop/cheat-sheet.txt
+cd
 fastfetch --gen-config
 (
 echo "{"
@@ -51,40 +51,43 @@ chsh -s /usr/bin/fish
 clear
 PS3='Would You Like Firefox or Chrome?'
 options=('Firefox' 'Google Chrome')
+
 select opt in "${options[@]}"
 do
-case $opt in
-"Firefox")
-sudo pacman -S firefox
-break
-;;
-"Google Chrome")
-yay -S google-chrome-stable
-break
-;;
-*)
-echo "Invalid Option $REPLY"
-;;
+	case $opt in
+		"Firefox")
+			sudo pacman -S firefox
+			break
+			;;
+		"Google Chrome")
+			yay -S google-chrome-stable
+			break
+			;;
+		*)
+			echo "Invalid Option $REPLY"
+			;;
 esac
 done
+
 clear
 echo "Changing your shell typically requires a restart for it to fully take affect, would you like to reboot?"
 PS3='Please Select Your Choice: '
 options=("Restart" "Go To KDE" "Exit To Typing")
+
 select opt in "${options[@]}"
 do
-case $opt in
-"Restart")
-sudo reboot now
-;;
-"Exit To Typing")
-exit
-;;
-"Go To KDE")
-sudo systemctl start sddm.service
-;;
-*)
-echo "Invalid Option $REPLY"
-;;
-esac
-done
+	case $opt in
+		"Restart")
+			sudo reboot now
+			;;
+		"Exit To Typing")
+			exit
+			;;
+		"Go To KDE")
+			sudo systemctl start sddm.service
+			;;
+		*)
+			echo "Invalid Option $REPLY"
+			;;
+	esac
+	done
