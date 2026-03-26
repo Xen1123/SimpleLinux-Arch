@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S wget curl git base-devel bat nano vim fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp firefox plasma networkmanager flatpak sddm openssh konsole dolphin discord --needed --noconfirm
+sudo pacman -S wget curl git base-devel bat nano vim fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin discord --needed --noconfirm
 cd ~
 rm -rf yay
 git clone https://aur.archlinux.org/yay.git
@@ -49,6 +49,25 @@ sudo systemctl start NetworkManager
 sudo systemctl start NetworkManager
 chsh -s /usr/bin/fish
 clear
+PS3='Would You Like Firefox or Chrome?'
+options=('Firefox' 'Google Chrome')
+select opt in "${options[@]}"
+do
+case $opt in
+"Firefox")
+sudo pacman -S firefox
+break
+;;
+"Google Chrome")
+yay -S google-chrome-stable
+break
+;;
+*)
+echo "Invalid Option $REPLY"
+;;
+esac
+done
+clear
 echo "Changing your shell typically requires a restart for it to fully take affect, would you like to reboot?"
 PS3='Please Select Your Choice: '
 options=("Restart" "Go To KDE" "Exit To Typing")
@@ -63,7 +82,6 @@ exit
 ;;
 "Go To KDE")
 sudo systemctl start sddm.service
-exit
 ;;
 *)
 echo "Invalid Option $REPLY"
