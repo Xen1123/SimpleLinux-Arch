@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S wget curl git base-devel bat nano vim fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin discord --needed --noconfirm
+sudo pacman -S wget curl git base-devel bat nano vim fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin --needed --noconfirm
 cd
 rm -rf yay
 		git clone https://aur.archlinux.org/yay.git
@@ -68,6 +68,29 @@ do
 			;;
 esac
 done
+
+clear
+PS3='Would You Like Localsend, Vesktop (Modded Discrod), or Both?'
+options=('Localsend' 'Vesktop' 'Both')
+
+select $opt in "${options[@]}"
+do
+	case $opt in
+		"Localsend")
+			yay -S localsend-bin --noconfirm
+			break
+			;;
+		"Vesktop")
+			yay -S vesktop-bin --noconfirm
+			break
+			;;
+		"Both")
+			yay -S vesktop-bin --noconfirm
+			yay -S localsend-bin --noconfirm
+			break
+			;;
+	esac
+	done
 
 clear
 echo "Changing your shell typically requires a restart for it to fully take affect, would you like to reboot?"
