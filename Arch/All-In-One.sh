@@ -55,7 +55,8 @@ case $opt in
 sudo reboot now
 ;;
 "Go To KDE")
-sudo systemctl enable --now sddm.service
+sudo systemctl enable sddm.service
+sudo systemctl start sddm.service
 exit
 ;;
 *)
