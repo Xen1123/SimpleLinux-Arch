@@ -8,7 +8,6 @@ rm -rf yay
 mkdir -p ~/.config/fish
 echo 'set fish_greeting ""' > ~/.config/fish/config.fish
 echo "fastfetch --logo venom" >> ~/.config/fish/config.fish
-	yay -S localsend-bin --noconfirm
 	yay -S balena-etcher --noconfirm
 	yay -S ventoy-bin --noconfirm
 	yay -S qdl --noconfirm
