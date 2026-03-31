@@ -60,7 +60,7 @@ do
 			break
 			;;
 		"Google Chrome")
-			yay -S google-chrome-stable
+			yay -S google-chrome --noconfirm
 			break
 			;;
 		*)
