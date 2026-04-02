@@ -1,4 +1,8 @@
 #!/bin/bash
+if ! sudo -v; then
+echo "This script requires sudo privilages to run, please make sure your user is able to execute root commands."
+exit 1
+fi
 cd /home/$USER
 echo "This script installs a suite of apps on your Arch system and then sets them up!"
 sleep 3
