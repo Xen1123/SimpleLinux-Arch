@@ -15,6 +15,7 @@ echo "fastfetch --logo venom" >> ~/.config/fish/config.fish
 	yay -S balena-etcher --noconfirm
 	yay -S ventoy-bin --noconfirm
 	yay -S qdl --noconfirm
+	yay -S kde-material-you-colors --noconfirm
 mkdir -p ~/Downloads
 wget https://raw.githubusercontent.com/Froste5308/SimpleLinux/main/cheat-sheet.txt
 mkdir -p ~/Desktop
