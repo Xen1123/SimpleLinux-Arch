@@ -3,7 +3,7 @@ if ! sudo -v; then
 echo "This script requires sudo privilages to run, please make sure your user is able to execute root commands."
 exit 1
 fi
-sudo pacman -S wget curl git base-devel bat nano btop vim scrcpy fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin --needed --noconfirm
+sudo pacman -S wget curl git powwer-profiles-daemon base-devel bat nano btop vim scrcpy fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin --needed --noconfirm
 cd
 rm -rf yay
 		git clone https://aur.archlinux.org/yay.git
@@ -48,9 +48,11 @@ echo "}"
 ) > ~/.config/fastfetch/config.jsonc
 sudo systemctl enable NetworkManager
 sudo systemctl enable sshd
+sudo systemctl start sshd
 sudo systemctl enable sddm.service
 sudo systemctl start NetworkManager
-sudo systemctl start NetworkManager
+sudo systemctl enable power-profiles-daemon.service
+sudo systemctl start power-profiles-daemon.service
 chsh -s /usr/bin/fish
 clear
 PS3='Would You Like Firefox or Chrome?'
