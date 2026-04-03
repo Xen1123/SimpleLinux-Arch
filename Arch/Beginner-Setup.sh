@@ -74,8 +74,8 @@ esac
 done
 
 clear
-PS3='Would You Like Localsend, Vesktop (Modded Discord), or Both?'
-options=("Localsend" "Vesktop" "Both" "Neither")
+PS3='Would You Like Localsend, Discord, or Both?'
+options=("Localsend" "Discord" "Both" "Neither")
 
 select opt in "${options[@]}"
 do
@@ -84,12 +84,12 @@ do
 			yay -S localsend-bin --noconfirm
 			break
 			;;
-		"Vesktop")
-			yay -S vesktop-bin --noconfirm
+		"Discord")
+			sudo pacman -S discord --noconfirm
 			break
 			;;
 		"Both")
-			yay -S vesktop-bin --noconfirm
+			sudo pacman -S discord --noconfirm
 			yay -S localsend-bin --noconfirm
 			break
 			;;
