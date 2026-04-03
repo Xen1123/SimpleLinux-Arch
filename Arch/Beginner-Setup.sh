@@ -53,7 +53,7 @@ sudo systemctl start NetworkManager
 chsh -s /usr/bin/fish
 clear
 PS3='Would You Like Firefox or Chrome?'
-options=('Firefox' 'Google Chrome')
+options=("Firefox" "Google Chrome")
 
 select opt in "${options[@]}"
 do
