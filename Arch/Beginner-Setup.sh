@@ -74,7 +74,7 @@ done
 
 clear
 PS3='Would You Like Localsend, Vesktop (Modded Discrod), or Both?'
-options=('Localsend' 'Vesktop' 'Both')
+options=("Localsend" "Vesktop" "Both" "Neither")
 
 select $opt in "${options[@]}"
 do
@@ -90,6 +90,9 @@ do
 		"Both")
 			yay -S vesktop-bin --noconfirm
 			yay -S localsend-bin --noconfirm
+			break
+			;;
+		"Neither")
 			break
 			;;
 	esac
