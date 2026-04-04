@@ -4,7 +4,8 @@
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </h2>
   
-## Data Commands
+<h3 align=center>Data Management<h3>
+  
 - **DD**
   - Used to write data bit-by-bit
     - `sudo dd if=/path/to/your/file of=/dev/device`
