@@ -65,3 +65,17 @@ cpucp.img       hyp.img          odm.img          system.img    vbmeta.img      
 eric@larpaholic ~/Android> 
 ```
 <h2 align=center>Utility & App Management</h2>
+
+- **LSBLK**
+  - Lists block devices (typically other storage devices/partitions)
+```bash
+eric@larpaholic ~> lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda           8:0    1 119.5G  0 disk 
+|-sda1        8:1    1 119.5G  0 part 
+`-sda2        8:2    1    32M  0 part 
+nvme0n1     259:0    0 476.9G  0 disk 
+|-nvme0n1p1 259:1    0     1G  0 part /boot
+`-nvme0n1p2 259:2    0 475.9G  0 part /
+eric@larpaholic ~> 
+```
