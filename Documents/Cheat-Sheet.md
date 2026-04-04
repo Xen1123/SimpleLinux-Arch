@@ -7,3 +7,8 @@
     - `sudo dd if=/path/to/your/file of=/dev/device`
   - **Zeroing Out A Drive (Completely Erasing It)**
     - `sudo dd if=/dev/zero of=/dev/device`
+- **MV**
+  - Used to move data (scripts, images, folders, etc.) across your device
+    - `mv ~/Downloads/Arch-Linux.iso ~/Operating-Systems/Arch-Linux.iso`
+  - You can also rename items with the "mv" command
+    - `mv ~/Downloads/Arch-Linux.iso ~/Operating-Systems/Arch.iso`
