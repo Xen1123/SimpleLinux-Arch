@@ -29,10 +29,6 @@
     - `cd ~/Downloads/Pictures` Puts you in the `Pictures` folder inside of `Downloads`
 - **PWD**
   - Simply tells you where you are
-    - `eric@larpaholic ~> pwd`
-    - `/home/eric`
-    - `eric@larpaholic ~> pwd`
-
 ```
 eric@larpaholic ~> pwd
 /home/eric
