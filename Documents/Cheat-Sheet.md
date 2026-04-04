@@ -3,6 +3,7 @@
 <h2 align="center">
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </h2>
+  
 ## Data Commands
 - **DD**
   - Used to write data bit-by-bit
