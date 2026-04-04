@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </h2>
   
-<h3 align=center>Data Management<h3/>
+<h3 align=center>Data Management</h3>h3>
   
 - **DD**
   - Used to write data bit-by-bit
