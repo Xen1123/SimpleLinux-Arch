@@ -45,7 +45,7 @@ eric@larpaholic ~/Android> ls
 Magisk.apk  Magisk.zip  Nothing3a/  Root-Help/  android-flasher.sh  phone-debloat.sh
 eric@larpaholic ~/Android> 
 ```
-  - Adding `-R` makes it list files in directories under your working directory, too.
+   - Adding `-R` makes it list files in directories under your working directory, too.
 ```bash
 eric@larpaholic ~/Android> ls -R
 .:
