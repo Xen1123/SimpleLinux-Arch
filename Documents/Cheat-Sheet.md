@@ -20,9 +20,9 @@
       - You may also use pipes with "|", this will redirect your command to whatever you put after the pipe.
         - `cat ~/Documents/Grocery-Bill.txt | wl-copy` would copy the contents to your clipboard if you had `wl-clipboard` installed.
 - **RM**
-  - Used to delete files (remove).
+  - Used to delete files (remove) PERMANENTLY, do not expect for there to be a trash where you can pull your files out!
     - `rm ~/Documents/Grocery-Bill.txt`
-  - Adding the ` -rf` flag allows rm to delete folders
+  - Adding the `-rf` flag allows rm to delete folders
     - `rm -rf ~/Documents`
 - **CD**
   - Used to change your directory, this makes typing easier, as you won't have to type out long names
