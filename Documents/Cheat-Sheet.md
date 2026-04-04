@@ -2,7 +2,7 @@
 <h3 align=center>With Explanations & Examples<h3>
 <h2 align="center">
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-</h2>
+<h2>
   
 ## Data Commands
 - **DD**
