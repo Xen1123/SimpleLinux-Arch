@@ -32,3 +32,9 @@
     - `eric@larpaholic ~> pwd`
     - `/home/eric`
     - `eric@larpaholic ~> pwd`
+
+```
+eric@larpaholic ~> pwd
+/home/eric
+eric@larpaholic ~> 
+```
