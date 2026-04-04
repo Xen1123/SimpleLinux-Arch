@@ -12,3 +12,4 @@
     - `mv ~/Downloads/Arch-Linux.iso ~/Operating-Systems/Arch-Linux.iso`
   - You can also rename items with the "mv" command
     - `mv ~/Downloads/Arch-Linux.iso ~/Operating-Systems/Arch.iso`
+      - **"CP"** is the copy command, it works the same as "mv", but it copies the itme over instead of just transferring it.
