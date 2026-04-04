@@ -38,3 +38,30 @@ eric@larpaholic ~> pwd
 /home/eric
 eric@larpaholic ~> 
 ```
+- **LS**
+  - Known as `list`, it lists the files in your working directory.
+```bash
+eric@larpaholic ~/Android> ls
+Magisk.apk  Magisk.zip  Nothing3a/  Root-Help/  android-flasher.sh  phone-debloat.sh
+eric@larpaholic ~/Android> 
+```
+  - Adding `-R` makes it list files in directories under your working directory, too.
+```bash
+eric@larpaholic ~/Android> ls -R
+.:
+Magisk.apk  Magisk.zip  Nothing3a/  Root-Help/  android-flasher.sh  phone-debloat.sh
+
+./Nothing3a:
+abl.img         cpucp_dtb.img    imagefv.img      product.img   system_dlkm.img  vbmeta_system.img  xbl_config.img
+aop.img         devcfg.img       init_boot.img    pvmfw.img     system_ext.img   vbmeta_vendor.img  xbl_ramdump.img
+aop_config.img  dsp.img          keymaster.img    qupfw.img     tz.img           vendor.img
+bluetooth.img   dtbo.img         modem.img        recovery.img  uefi.img         vendor_boot.img
+boot.img        featenabler.img  multiimgoem.img  shrm.img      uefisecapp.img   vendor_dlkm.img
+cpucp.img       hyp.img          odm.img          system.img    vbmeta.img       xbl.img
+
+./Root-Help:
+ AdAway.apk       KsuWebUI.apk           LawnIcons.apk   Strong-Integrity.zip   Yurikey.zip
+ GlobalIcon.apk  'LSPosed(Vector).zip'   Rezygisk.zip    Tricky-Store.zip
+eric@larpaholic ~/Android> 
+```
+<h2 align=center></h2>
