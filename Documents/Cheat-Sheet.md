@@ -4,6 +4,6 @@
 ## Data Commands
 - **DD**
   - Used to write data bit-by-bit
-    - 'sudo dd if=/path/to/your/file of=/dev/device'
+    - `sudo dd if=/path/to/your/file of=/dev/device`
   - **Zeroing Out A Drive (Completely Erasing It)**
-    - 'sudo dd if=/dev/zero of=/dev/device'
+    - `sudo dd if=/dev/zero of=/dev/device`
