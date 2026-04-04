@@ -3,7 +3,7 @@ if ! sudo -v; then
 echo "This script requires sudo privilages to run, please make sure your user is able to execute root commands."
 exit 1
 fi
-sudo pacman -S wget curl git powwer-profiles-daemon base-devel bat nano btop vim scrcpy fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin --needed --noconfirm
+sudo pacman -S wget okular eog wl-clipboard curl git powwer-profiles-daemon base-devel bat nano btop vim scrcpy fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin --needed --noconfirm
 cd
 rm -rf yay
 		git clone https://aur.archlinux.org/yay.git
