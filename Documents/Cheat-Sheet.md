@@ -29,7 +29,7 @@
     - `cd ~/Downloads/Pictures` Puts you in the `Pictures` folder inside of `Downloads`
 - **PWD**
   - Simply tells you where you are
-```
+```bash
 eric@larpaholic ~> pwd
 /home/eric
 eric@larpaholic ~> 
