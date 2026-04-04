@@ -30,5 +30,5 @@
 - **PWD**
   - Simply tells you where you are
     - `eric@larpaholic ~> pwd
-/home/eric
-eric@larpaholic ~> `
+      /home/eric
+      eric@larpaholic ~>`
