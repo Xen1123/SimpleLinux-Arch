@@ -96,6 +96,14 @@ Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 004 Device 002: ID 04e8:6300 Samsung Electronics Co., Ltd Flash Drive
 eric@larpaholic ~> 
 ```
+<h2 align=center>Running Items & Permissions</h2>
+
+- **CHMOD**
+  - Changes what a file can do or what you can do to it
+    - `chmod +x <file_name>` will make your file executable, which is how you run scripts
+    - You can also use chmod to change what someone can do to the file with numbers.
+      - chmod adds up to 7, for example, `chmod 7 <file> would make it so you can read it, write to it, and execute it, 6 is just read and write, 5 is read and execute, and 4 just lets you read it.
+
 <h2 align=center>Main Package Managers</h2>
 
 - **APT**
