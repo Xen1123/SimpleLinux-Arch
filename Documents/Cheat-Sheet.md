@@ -45,7 +45,10 @@ eric@larpaholic ~/Android> ls
 Magisk.apk  Magisk.zip  Nothing3a/  Root-Help/  android-flasher.sh  phone-debloat.sh
 eric@larpaholic ~/Android> 
 ```
-  - Adding `-R` makes it list files in directories under your working directory, too.
+<details>
+  <summary>Click To See The Recursive Summary</summary>
+</details>
+
 ```bash
 eric@larpaholic ~/Android> ls -R
 .:
