@@ -87,6 +87,7 @@ nvme0n1     259:0    0 476.9G  0 disk
 eric@larpaholic ~> 
 ```
 </details>
+
 - **LSUSB**
   - This command lists USB devices and other connected devices, not just USBs.
 <details>
@@ -105,6 +106,7 @@ Bus 004 Device 002: ID 04e8:6300 Samsung Electronics Co., Ltd Flash Drive
 eric@larpaholic ~> 
 ```
 </details>
+
 <h2 align=center>Running Items & Permissions</h2>
 
 - **CHMOD**
