@@ -47,7 +47,6 @@ eric@larpaholic ~/Android>
 ```
 <details>
   <summary>Click To See The Recursive Summary</summary>
-</details>
 
 ```bash
 eric@larpaholic ~/Android> ls -R
