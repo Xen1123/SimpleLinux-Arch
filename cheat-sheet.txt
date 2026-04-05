@@ -70,7 +70,7 @@
     Pacman - sudo pacman -Syu
     DNF - sudo dnf upgrade
 ---------
-| "unanme -a" is a very useful command for some, but not for many. It prints system information, like your kernel name, your hostname, the time your system thinks it is, etc.
+| "uname -a" is a very useful command for some, but not for many. It prints system information, like your kernel name, your hostname, the time your system thinks it is, etc.
 | Most of the information "uname -a" gives you is useless if you have used your computer for more than ten seconds, but it is a useful command if you're diagnosing a device and have no insider information.
 ---------
 
