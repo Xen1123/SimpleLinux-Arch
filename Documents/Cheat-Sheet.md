@@ -95,21 +95,29 @@ eric@larpaholic ~>
 ```
 <h2 align=center>Main Package Managers</h2>
 
-- APT
+- **APT**
   - Used on Debian/Ubuntu based systems
     - `sudo apt install`
     - `sudo apt update`
     - `sudo apt upgrade`
     - `sudo apt remove`
-- DNF
+- **DNF**
   - Used on Fedora based systems
     - `sudo dnf install`
     - `sudo dnf update`
     - `sudo dnf remove`
-- Pacman
+- **Pacman**
   - Used on Arch based systems
     - `sudo pacman -S` (Install)
     - `sudo pacman -Rnc` (Remove/Uninstall)
     - `sudo pacman -Sy` (Update)
       - `sudo pacman -Syu`
       - `sudo pacman -Syyu` 
+<h2 align=center>Miscellaneous Info</h2>
+
+- **UNAME**
+  - The `uname` command shows critical system info
+    - Typically used as `uname -a` to show all info
+    - The information this command shows includes date and time, CPU architecture, and your kernel
+- **TIPS**
+  - Using `TAB` in an unfinished command will typically finish it, like if you're trying to move to a directory, and you type `cd do`, and there are two or more directories that start with `do`, and you type `TAB`, it will show you your options, if there is only one option, it will autofill the command.
