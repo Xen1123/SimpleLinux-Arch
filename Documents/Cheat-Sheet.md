@@ -92,7 +92,6 @@ eric@larpaholic ~>
   - This command lists USB devices and other connected devices, not just USBs.
 <details>
   <summary>Click To See LSUSB Demonstration<summary>
-
 ```bash
 eric@larpaholic ~> lsusb
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
