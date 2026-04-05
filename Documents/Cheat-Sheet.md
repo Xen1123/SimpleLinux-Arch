@@ -91,7 +91,7 @@ eric@larpaholic ~>
 - **LSUSB**
   - This command lists USB devices and other connected devices, not just USBs.
 <details>
-  <summary>Click To See LSUSB Demonstration<summary>
+  <summary>Click To See LSUSB Demonstration</summary>
 
 ```bash
 eric@larpaholic ~> lsusb
