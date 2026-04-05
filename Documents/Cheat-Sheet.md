@@ -79,3 +79,17 @@ nvme0n1     259:0    0 476.9G  0 disk
 `-nvme0n1p2 259:2    0 475.9G  0 part /
 eric@larpaholic ~> 
 ```
+- **LSUSB**
+  - This command lists USB devices and other connected devices, not just USBs.
+```bash
+eric@larpaholic ~> lsusb
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 002: ID 1bcf:28c4 Sunplus Innovation Technology Inc. Integrated_Webcam_HD
+Bus 003 Device 003: ID 0a5c:5843 Broadcom Corp. BCM58200 ControlVault 3 (FingerPrint sensor + Contacted SmartCard)
+Bus 003 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 004 Device 002: ID 04e8:6300 Samsung Electronics Co., Ltd Flash Drive
+eric@larpaholic ~> 
+```
