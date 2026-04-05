@@ -121,3 +121,4 @@ eric@larpaholic ~>
     - The information this command shows includes date and time, CPU architecture, and your kernel
 - **TIPS**
   - Using `TAB` in an unfinished command will typically finish it, like if you're trying to move to a directory, and you type `cd do`, and there are two or more directories that start with `do`, and you type `TAB`, it will show you your options, if there is only one option, it will autofill the command.
+  - You can change shells, bash isn't the only shell in Linux, there are two other largely used shells, `fish` and `zsh`, you can download them with your package manager and then use `chsh -s /usr/bin/the_shell_you_want` to change your default shell.
