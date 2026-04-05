@@ -9,14 +9,14 @@
 - **DD**
   - Used to write data bit-by-bit
     - `sudo dd if=/path/to/your/file of=/dev/device bs=4M conv=fsync status=progress`
-  - **Zeroing Out A Drive (Completely Erasing It)**
+  - Zeroing Out A Drive **(Completely Erasing It)**
     - `sudo dd if=/dev/zero of=/dev/device bs=4M conv=fsync status=progress`
 - **MV**
   - Used to move data (scripts, images, folders, etc.) across your device
     - `mv ~/Downloads/Arch-Linux.iso ~/Operating-Systems/Arch-Linux.iso`
   - You can also rename items with the "mv" command
     - `mv ~/Downloads/Arch-Linux.iso ~/Operating-Systems/Arch.iso`
-      - **"CP"** is the copy command, it works the same as `mv`, but it copies the item over instead of just transferring it.
+      - **CP** is the copy command, it works the same as `mv`, but it copies the item over instead of just transferring it.
 - **CAT**
   - Used to show the file content of text files like .txt and .sh
     - `cat ~/Android/Phone-Debloat.sh`
@@ -101,3 +101,15 @@ eric@larpaholic ~>
     - `sudo apt update`
     - `sudo apt upgrade`
     - `sudo apt remove`
+- DNF
+  - Used on Fedora based systems
+    - `sudo dnf install`
+    - `sudo dnf update`
+    - `sudo dnf remove`
+- Pacman
+  - Used on Arch based systems
+    - `sudo pacman -S` (Install)
+    - `sudo pacman -Rnc` (Remove/Uninstall)
+    - `sudo pacman -Sy` (Update)
+      - `sudo pacman -Syu`
+      - `sudo pacman -Syyu` 
