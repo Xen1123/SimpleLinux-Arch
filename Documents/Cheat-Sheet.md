@@ -67,10 +67,14 @@ cpucp.img       hyp.img          odm.img          system.img    vbmeta.img      
 eric@larpaholic ~/Android> 
 ```
 </details>
+
 <h2 align=center>Utility & App Management</h2>
 
 - **LSBLK**
   - Lists block devices (typically other storage devices/partitions)
+<details>
+  <summary>Click To See Block List Demonstration</summary>
+
 ```bash
 eric@larpaholic ~> lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
@@ -82,8 +86,12 @@ nvme0n1     259:0    0 476.9G  0 disk
 `-nvme0n1p2 259:2    0 475.9G  0 part /
 eric@larpaholic ~> 
 ```
+</details>
 - **LSUSB**
   - This command lists USB devices and other connected devices, not just USBs.
+<details>
+  <summary>Click To See LSUSB Demonstration<summary>
+
 ```bash
 eric@larpaholic ~> lsusb
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
@@ -96,6 +104,7 @@ Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 004 Device 002: ID 04e8:6300 Samsung Electronics Co., Ltd Flash Drive
 eric@larpaholic ~> 
 ```
+</details>
 <h2 align=center>Running Items & Permissions</h2>
 
 - **CHMOD**
