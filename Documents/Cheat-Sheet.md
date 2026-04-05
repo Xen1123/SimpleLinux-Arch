@@ -97,7 +97,7 @@ eric@larpaholic ~>
 
 - APT
   - Used on Debian/Ubuntu based systems
-    - 'sudo apt install'
-    - 'sudo apt update'
-    - 'sudo apt upgrade'
-    - 'sudo apt remove'
+    - `sudo apt install`
+    - `sudo apt update`
+    - `sudo apt upgrade`
+    - `sudo apt remove`
