@@ -93,3 +93,4 @@ Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 004 Device 002: ID 04e8:6300 Samsung Electronics Co., Ltd Flash Drive
 eric@larpaholic ~> 
 ```
+<h2 align=center>Main Package Managers</h2>h2>
