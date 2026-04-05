@@ -66,8 +66,7 @@ cpucp.img       hyp.img          odm.img          system.img    vbmeta.img      
  GlobalIcon.apk  'LSPosed(Vector).zip'   Rezygisk.zip    Tricky-Store.zip
 eric@larpaholic ~/Android> 
 ```
-<details>
-
+</details>
 <h2 align=center>Utility & App Management</h2>
 
 - **LSBLK**
